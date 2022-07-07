@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobileAppAssigment.Page2"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Button x:Name="lvl0" Text="LEVEL 0" FontSize="70" HeightRequest="200" WidthRequest="400" Clicked="lvl0_Clicked"/>
+            <Label Text=" "/>
+            <Button x:Name="lvl1" Text="LEVEL 1" FontSize="70" HeightRequest="200" WidthRequest="150" Clicked="lvl1_Clicked"/>
+            <Label Text=" "/>
+            <Button x:Name="lvl2" Text="LEVEL 2" FontSize="70" HeightRequest="200" WidthRequest="150" Clicked="lvl2_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

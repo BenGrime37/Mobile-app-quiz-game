@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobileAppAssigment.Page5">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="answer1" Text="" FontSize="50" />
+            <Label x:Name="answer2" Text="" FontSize="50" />
+            <Label x:Name="answer3" Text="" FontSize="50" />
+            <Label x:Name="answer4" Text="" FontSize="50" />
+            <Label x:Name="answer5" Text="" FontSize="50" />
+            <Label x:Name="answer6" Text="" FontSize="50" />
+            <Label x:Name="answer7" Text="" FontSize="50" />
+            <Label x:Name="answer8" Text="" FontSize="50" />
+            <Label x:Name="answer9" Text="" FontSize="50" />
+            <Label x:Name="answer10" Text="" FontSize="50" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

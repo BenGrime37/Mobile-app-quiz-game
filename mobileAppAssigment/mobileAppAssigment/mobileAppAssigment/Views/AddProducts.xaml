@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobileAppAssigment.Views.AddProducts"
+    Title="Andy's Fruit and Veg"
+             Visual="Material"
+             NavigationPage.HasNavigationBar="True"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Vertical" Grid.Row="0" Padding="5" Spacing="5">
+                <Entry x:Name="txtProductName" Placeholder="Enter Product Name" Text="{Binding product.productName}"
+                HorizontalOptions="FillAndExpand"/>
+
+                <Entry x:Name="txtPrice" Placeholder="Enter Product Price" Text="{Binding product.productPrice}"
+                HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
+
+                <Button x:Name="btnSave" Text="{Binding btnSaveText}"
+                Command="{Binding btnSaveProduct}" IsVisible="{Binding showButton}"/>
+
+                <ActivityIndicator x:Name="activityIndicator1" IsVisible="{Binding isBusy}"
+                IsRunning="{Binding isBusy}"/>
+
+                <Label FontSize="Micro" x:Name="lblMessage" Text="{Binding lblMessage}" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Grid.Row="1" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Padding="5"
+                    BackgroundColor="#c9c9c9">
+
+                    <Label Text="Name" WidthRequest="300" TextColor="#000" FontAttributes="Bold"
+                    VerticalOptions="Start"/>
+                    <Label Text="Price" WidthRequest="100" TextColor="#fc0339" FontAttributes="Bold"
+                    VerticalOptions="Start"/>
+                </StackLayout>
+
+                <ListView x:Name="lstProducts" ItemsSource="{Binding lstProducts}"
+            HorizontalOptions="FillAndExpand" VerticalOptions="Start" SeparatorColor="Black"
+            CachingStrategy="RecycleElement" ItemSelected="lstProducts_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
+            VerticalOptions="Start" Padding="5" BackgroundColor="#fff">
+                                    <Label Text="{Binding productName}" WidthRequest="300" TextColor="#000"
+            FontAttributes="Bold" VerticalOptions="Start"/>
+                                    <Label Text="{Binding productPrice}" WidthRequest="100" TextColor="#fc0339"
+            FontAttributes="Bold" VerticalOptions="Start"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

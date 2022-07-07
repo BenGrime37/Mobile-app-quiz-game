@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobileAppAssigment.Page3"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label x:Name="questionTxt" Text="" FontSize="90"/>
+            <Label x:Name="correctOrNot" Text="" FontSize="50"/>
+            <Entry x:Name="enterTxt" Placeholder="Answer" Keyboard="Numeric"  WidthRequest="200" FontSize="50"/>
+            <Button x:Name="submitBtn" Text="Submit" FontSize="40" WidthRequest="300" Clicked="submitBtn_Clicked"/>
+            <Label x:Name="timerText" Text="Timer:" FontSize="50"/>
+            <Label x:Name="timerLbl" Text="0" FontSize="50"/>
+            <Label x:Name="ScoreLbl" Text="Score:" FontSize="50"/>
+            <Label x:Name="scoreTtxt" Text="0" FontSize="50"/>
+            <!--<Button x:Name="alert" Text="Alert" Clicked="alert_Clicked"></Button>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

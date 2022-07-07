@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobileAppAssigment.App">
+    <Application.Resources>
+
+        <!--<ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="#f5f5f5"/>
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="PlaceholderColor" Value="#787878"/>
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#1976D2"/>
+                <Setter Property="TextColor" Value="#fff"/>
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#000"/>
+                <Setter Property="FontSize" Value="Default"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>-->
+    </Application.Resources>
+</Application>

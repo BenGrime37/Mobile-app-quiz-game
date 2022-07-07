@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobileAppAssigment.Page4">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label x:Name="scoreLbl" Text="" FontSize="100" ></Label>
+        <!--<Button x:Name="answersBtn" Text="ANSWERS" FontSize="70" Clicked="answersBtn_Clicked" HeightRequest="200"/>-->
+        <Button x:Name="exitBtn" Text="EXIT" FontSize="70" Clicked="exitBtn_Clicked" HeightRequest="200"/>
+
+    </StackLayout>
+</ContentPage>
